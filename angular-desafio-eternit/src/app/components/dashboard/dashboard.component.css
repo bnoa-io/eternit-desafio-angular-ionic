@@ -1,0 +1,226 @@
+header {
+  height: 7dvh;
+  display: flex;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding-inline: 1.6rem;
+}
+
+header > img {
+  max-height: 1.75rem;
+  margin-right: auto;
+}
+
+header > #profile{
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+}
+
+header > #profile > span:first-of-type {
+  background-color: var(--card-background);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header > #profile > b {
+  font-weight: 400;
+  color: var(--white);
+}
+
+header > #profile > span:last-of-type {
+  font: 1.6rem var(--font-icon);
+  color: var(--white);
+}
+
+main {
+  min-height: 93dvh;
+  display: block;
+  background-color: var(--primary-background);
+  padding: 1.6rem;
+  column-count: 1;
+  column-gap: 1.6rem;
+}
+
+/* modal */
+dialog[open] {
+  border: none;
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, .1);
+  backdrop-filter: blur(2px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+dialog > .container-modal > p > b {
+  padding-left: .8rem;
+}
+
+.container-modal {
+  background-color: var(--card-background);
+  width: 60dvw;
+  min-height: 25dvh;
+  padding: 0.8rem;
+  border: solid 0.2rem var(--border-color);
+  border-radius: var(--border-radius);
+}
+
+.container-modal > p {
+  border-bottom: solid .2rem var(--border-color);
+  padding-bottom: .8rem;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  min-height: 100%;
+  margin-top: 1.625rem;
+}
+
+.loading span {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+  background-color: var(--primary-color);
+  margin: .5rem;
+
+  animation: .3s linear .3s infinite alternate bounce;
+}
+
+.loading>span:nth-child(1) {
+  animation-delay: .1s;
+}
+
+.loading>span:nth-child(2) {
+  animation-delay: .2s;
+}
+
+.loading>span:nth-child(3) {
+  animation-delay: .3s;
+}
+
+@keyframes bounce {
+  to {
+    transform: translateY(2.5rem);
+  }
+}
+
+/* device width md => 2 cards por linha */
+@media screen and (min-width: 960px) and (max-width: 1279px) {
+  header {
+    height: 9dvh;
+    padding-inline: 3.2rem;
+  }
+
+  header > #profile > b {
+    font-size: 1.8rem;
+  }
+
+  header > img {
+    max-height: 3.5rem;
+  }
+
+  header > #profile > span:first-of-type {
+    width: 5rem;
+    height: 5rem;
+    font-size: 2rem;
+  }
+
+  main {
+    padding: 1.6rem 3.2rem;
+    column-count: 2;
+  }
+
+  .container-modal {
+    width: 40dvw;
+    min-height: 20dvh;
+  }
+
+  .container-modal > div {
+    margin-top: 3rem;
+  }
+}
+
+/* device width lg => 3 cards por linha */
+@media screen and (min-width: 1280px) and (max-width: 1919px) {
+  header {
+    height: 10dvh;
+    padding-inline: 3.2rem;
+  }
+
+  header > img {
+    max-height: 4rem;
+  }
+
+  header > #profile > span:first-of-type {
+    width: 5rem;
+    height: 5rem;
+    font-size: 2rem;
+  }
+
+  header > #profile > b {
+    font-size: 2rem;
+  }
+
+  main {
+    column-count: 3;
+    column-gap: 3.2rem;
+    padding: 3.2rem;
+  }
+
+  .container-modal {
+    width: 30dvw;
+    min-height: 20dvh;
+  }
+
+  .container-modal > div {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (min-width: 1919px) {
+  header {
+    height: 10dvh;
+    padding-inline: 6.4rem;
+  }
+
+  header > #profile > b {
+    font-size: 2rem;
+  }
+
+  header > #profile > span:first-of-type {
+    width: 6rem;
+    height: 6rem;
+    font-size: 2.2rem;
+  }
+
+  header > img {
+    max-height: 4rem;
+  }
+
+  main {
+    padding: 3.2rem 6.4rem;
+    column-count: 4;
+    column-gap: 3.2rem;
+  }
+
+  .container-modal {
+    width: 30dvw;
+    min-height: 20dvh;
+  }
+
+  .container-modal > div {
+    margin-top: 3.5rem;
+  }
+}

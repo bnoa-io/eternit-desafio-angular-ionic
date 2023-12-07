@@ -1,0 +1,19 @@
+<article data-id="{{card.id}}">
+  <figure>
+    <img [src]="card.pic" alt="imagem da habilidade" draggable="false">
+  </figure>
+  <div>
+    <h4>{{card.name}}</h4>
+    <p>{{card.description}}</p>
+    <div class="container-buttons">
+      <button (click)="onShare()">
+        <span>share</span>
+        Compartilhar
+      </button>
+      <button (click)="onLike(card)" [ngClass]="{'blue' : card.likes > 4, 'green': card.likes > 10}">
+        <span>favorite</span>
+        {{card.likes}}
+      </button>
+    </div>
+  </div>
+</article>

@@ -1,0 +1,80 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+@font-face {
+  font-family: 'Saira';
+  src: url('assets/fonts/Saira-VariableFont_wdth,wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/fonts/icone-material-icons.otf') format('opentype');
+}
+
+:root {
+  --primary-color: #DA291C;
+  --primary-background: #E6E6E6;
+  --card-background: #F1F1F1;
+  --border-color: #E9ABA7;
+  --text-color: #2C2C2C;
+  --input-background: #F1F1F1;
+  --button-background: #F1F1F1;
+  --white: #F1F1F1;
+  /* fonts */
+  --font-icon: 'Material Icons';
+  --font-saira: 'Saira';
+  --font-segoe: 'Segoe UI', system-ui, sans-serif;
+  /* others */
+  --border-radius: .4rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font: 1.6rem var(--font-saira);
+}
+
+button {
+  cursor: pointer;
+}
+
+input, button {
+  outline: none;
+  border: none;
+  background: none;
+}
+

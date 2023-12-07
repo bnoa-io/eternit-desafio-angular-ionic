@@ -1,0 +1,26 @@
+<header>
+  <img src="assets/images/logo-desafio.png" alt="Logo da eternit" draggable="false">
+  <div id="profile">
+    <span>AD</span>
+    <b>Administrador</b>
+    <span>expand_more</span>
+  </div>
+</header>
+<main>
+  @for (card of this.cards; track card.likes) {
+    <app-card [card]="card"></app-card>
+  }
+</main>
+<dialog [open]="modalText">
+  <div class="container-modal">
+    <p>
+      {{modalText}}
+      <b  *ngIf="timer > -1">{{timer}}</b>
+    </p>
+    <div class="loading">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</dialog>

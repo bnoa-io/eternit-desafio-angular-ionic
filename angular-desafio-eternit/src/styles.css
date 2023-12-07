@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'Saira';
+  src: url('assets/fonts/Saira-VariableFont_wdth,wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/fonts/icone-material-icons.otf') format('opentype');
+}
+
+:root {
+  --primary-color: #DA291C;
+  --primary-background: #E6E6E6;
+  --card-background: #F1F1F1;
+  --border-color: #E9ABA7;
+  --text-color: #2C2C2C;
+  --input-background: #F1F1F1;
+  --button-background: #F1F1F1;
+  --white: #F1F1F1;
+  /* fonts */
+  --font-icon: 'Material Icons';
+  --font-saira: 'Saira';
+  --font-segoe: 'Segoe UI', system-ui, sans-serif;
+  /* others */
+  --border-radius: .4rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font: 1.6rem var(--font-saira);
+}
+
+button {
+  cursor: pointer;
+}
+
+input, button {
+  outline: none;
+  border: none;
+  background: none;
+}
