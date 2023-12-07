@@ -15,5 +15,5 @@ Um teste de desenvolvimento frontend, voltado para testar minhas habilidades e c
 ## Entrega
 - ✅ Todos os tópicos foram atendidos e superados
 - ⚠ BÔNUS: Além do principal feito em angular, uma versão simples foi realizada em ionic
-## Resumo do desafio
-Aguardando a resposta final, mas dês de já contente e grato por ter conseguido realizar o desafio, além de ter aprendido conceitos importantes no processo de desenvolvimento 😁
+## Considerações finais
+No aguardo do feedback, mas dês de já contente e grato por ter conseguido realizar o desafio, além de ter aprendido conceitos importantes no processo de desenvolvimento 😁
